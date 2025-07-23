@@ -52,10 +52,6 @@
 # define SUPPORT_CLOSED_LOOP			0
 #endif
 
-#ifndef SUPPORT_PHASE_STEPPING
-# define SUPPORT_PHASE_STEPPING			0
-#endif
-
 #ifndef SUPPORT_BRAKE_PWM
 # define SUPPORT_BRAKE_PWM				0
 #endif
@@ -64,17 +60,13 @@
 # define DEDICATED_STEP_TIMER			0
 #endif
 
-#ifndef SUPPORT_OVERRIDE_STEP_PIN
-# define SUPPORT_OVERRIDE_STEP_PIN		0
-#endif
-
 #if !SUPPORT_DRIVERS
-# define HAS_SMART_DRIVERS				0
-# define SUPPORT_TMC22xx				0
-# define SUPPORT_TMC2660				0
+# define HAS_SMART_DRIVERS				1
+# define SUPPORT_TMC22xx				1
 # define SUPPORT_TMC51xx				0
+# define SUPPORT_TMC2160				0
 # define SUPPORT_SLOW_DRIVERS			0
-constexpr size_t NumDrivers = 0;
+constexpr size_t NumDrivers = 2;
 #endif
 
 #if !defined(SUPPORT_BME280)
@@ -90,7 +82,7 @@ constexpr size_t NumDrivers = 0;
 #endif
 
 #ifndef SUPPORT_LED_STRIPS
-# define SUPPORT_LED_STRIPS				1
+# define SUPPORT_LED_STRIPS				0
 #endif
 
 #ifndef SUPPORT_DMA_NEOPIXEL
