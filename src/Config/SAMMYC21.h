@@ -190,7 +190,7 @@ constexpr PinDescription PinTable[] =
     // Port A
     { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     Nx, nullptr     },  // PA00 not on board
     { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     Nx, nullptr     },  // PA01 not on board
-    { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     2,  "io2.in"        },  // PA02 thermistor
+    { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     2,  nullptr        },  // PA02 thermistor
     { TcOutput::none,   TccOutput::none,    AdcInput::adc0_1,   AdcInput::none,     SercomIo::none,     SercomIo::none,     Nx, "ate.vin"       },  // PA03 thermistor
     { TcOutput::none,   TccOutput::tcc0_0E, AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     4,  "io0.out"       },  // PA04
     { TcOutput::none,   TccOutput::none,    AdcInput::adc0_5,   AdcInput::none,     SercomIo::none,     SercomIo::none,     5,  "io3.in"        },  // PA05
@@ -200,7 +200,7 @@ constexpr PinDescription PinTable[] =
     { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     Nx, nullptr     },  // PA09 driver 0 & 1 EN
     { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     Nx, "ate.d0.dir"        },  // PA10 driver 0 DIR
     { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     Nx, "ate.d0.step"       },  // PA11 driver 0 STEP
-    { TcOutput::none,   TccOutput::tcc2_0E, AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     12, "pa12"      },  // PA12
+    { TcOutput::none,   TccOutput::tcc2_0E, AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     12, "io2.out"      },  // PA12
 #if SUPPORT_LIS3DH
     { TcOutput::none,   TccOutput::none,    AdcInput::none,     AdcInput::none,     SercomIo::none,     SercomIo::none,     13, nullptr     },  // PA13 accelerometer INT1
 #else
